@@ -25,7 +25,8 @@
       url = 'http://collectormetric.com/' + username + '/' + id;
 
       // add the stylesheet if it does not exist
-      var stylesheet = "collectormetric-card.css"
+      // Testing only, use a CDN!
+      var stylesheet = "https://raw.githubusercontent.com/CollectorMetric/collectormetric-embed/master/collectormetric-card.css"
       if ($('link[href="' + stylesheet + '"]').length === 0) {
         linkTag = document.createElement('link');
         head = document.getElementsByTagName('head')[0];
