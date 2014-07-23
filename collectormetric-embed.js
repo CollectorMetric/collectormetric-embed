@@ -3,8 +3,9 @@
 // version 1.0
 (function(jQuery) {
 
-  jQuery.fn.collectormetric = function() {
-    $ = jQuery;
+  var $ = jQuery;
+
+  $.fn.collectormetric = function() {
     return this.each(function() {
       var $elem = $(this),
         username,
