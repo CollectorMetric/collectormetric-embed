@@ -1,0 +1,72 @@
+/* base card */
+.cm-card {
+  max-width: 350px;
+  margin: 20px;
+  padding: 8px 8px 0;
+  background: #fff;
+  color: #555;
+  position: relative;
+  border: 1px solid #eee;
+  border-color:#eee #ddd #bbb;
+  border-top: 4px solid #ef4c50;
+  box-shadow:rgba(0,0,0,.14) 0 1px 3px;
+}
+
+.cm-card a {
+  text-decoration: none;
+  color: #4183c4;
+  outline: 0;
+}
+.cm-card a:hover {
+  text-decoration: underline;
+}
+
+.cm-card .header {
+  position: relative;
+}
+
+/* item card */
+.item-card .header {
+  text-align: left;
+  padding: 3px 0 4px 57px;
+}
+.item-card .avatar, .item-card .avatar img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 48px;
+  height: 48px;
+  background: #fff;
+  border-radius: 4px;
+}
+.item-card .header a {
+  color: #707070;
+}
+.item-card .header strong {
+  display: block;
+  font-size: 18px;
+  line-height: 1.4;
+}
+.item-card .header strong a {
+  color: #292f33;
+}
+.item-card .header .name {
+  font-size: 16px;
+}
+.item-card .content {
+  padding: 6px 0 10px;
+}
+.item-card .content img {
+  width: 100%;
+}
+.item-card .footer {
+  margin: 0px !important;
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+  border-top: 1px solid #ef4c50;
+  padding: 8px 0 6px;
+}
+.item-card .footer a {
+  color: #555;
+}
