@@ -1,9 +1,10 @@
 // author: Paul Deardorff (themetric)
 // https://github.com/collectormetric/collectormetric-embed
 // version 1.0
-(function($) {
+(function(jQuery) {
 
-  $.fn.collectormetric = function() {
+  jQuery.fn.collectormetric = function() {
+    $ = jQuery;
     return this.each(function() {
       var $elem = $(this),
         username,
@@ -25,8 +26,7 @@
       url = 'http://collectormetric.com/' + username + '/' + id;
 
       // add the stylesheet if it does not exist
-      // Testing only, use a CDN!
-      var stylesheet = "https://raw.githubusercontent.com/CollectorMetric/collectormetric-embed/master/collectormetric-card.css"
+      var stylesheet = "https://collectormetric.github.io/collectormetric-embed/collectormetric-card.css"
       if ($('link[href="' + stylesheet + '"]').length === 0) {
         linkTag = document.createElement('link');
         head = document.getElementsByTagName('head')[0];
